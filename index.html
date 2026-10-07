@@ -1,25 +1,267 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <title>MiPortafolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gabriela Cardona | Full Stack Developer</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS propio -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <section id="hero">
-        <p>Hola, soy</p>
-        <h1>gabriela.cardona</h1>
-        <h2>FULL STACK DEVELOPER</h2>
-        <p>Con curiosidad para aprender y determinación para crecer,
-            convierto cada reto en una oportunidad para construir mejores soluciones.</p>
-        <img src="./assets/images/profile-gabriela.png" alt="Fotografia de Gabriela Cardona">
-        <a href="#projects">EXPLORAR PROYECTOS</a>
-    </section>
-    <section id="projects">
-        <h2>MIS PROYECTOS</h2>
+
+    <!--NAVBAR-->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="#home">
+                gabriela<span>.cardona</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                <div class="navbar-nav">
+
+                    <a class="nav-link" href="#home">00 / HOME</a>
+                    <a class="nav-link" href="#about">01 / ABOUT</a>
+                    <a class="nav-link" href="#journey">02 / JOURNEY</a>
+                    <a class="nav-link" href="#stack">03 / STACK</a>
+                    <a class="nav-link" href="#projects">04 / PROJECTS</a>
+                    <a class="nav-link" href="#contact">05 / CONTACT</a>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO-->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-greeting">Hola, soy</p>
+
+            <h1>gabriela.cardona</h1>
+
+            <h2>FULL STACK DEVELOPER</h2>
+
+            <p class="hero-description">
+                Con curiosidad para aprender y determinación para crecer,
+                convierto cada reto en una oportunidad para construir mejores soluciones.
+            </p>
+
+            <a href="#projects" class="hero-button">
+                EXPLORAR PROYECTOS
+                <span>→</span>
+            </a>
+
+        </div>
+
+        <div class="hero-image-container">
+
+            <div class="tech-tag tag-java">Java</div>
+            <div class="tech-tag tag-spring">Spring</div>
+            <div class="tech-tag tag-js">JavaScript</div>
+
+            <img src="./assets/images/profile-gabriela.png"
+                alt="Fotografía de Gabriela Cardona">
+
+        </div>
 
     </section>
+
+
+    <!--ABOUT-->
+
+    <section id="about" class="portfolio-section">
+
+        <div class="container">
+
+            <p class="section-number">01 / ABOUT</p>
+
+            <h2 class="section-title">
+                Sobre <span>mí</span>
+            </h2>
+
+            <div class="about-content">
+
+                <p>
+                    Soy desarrolladora Full Stack con interés en construir
+                    soluciones tecnológicas que combinen lógica, creatividad
+                    y una buena experiencia para el usuario.
+                </p>
+
+                <p>
+                    Me apasiona aprender nuevas tecnologías, enfrentar retos
+                    y convertir ideas en soluciones funcionales.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--JOURNEY-->
+
+    <section id="journey" class="portfolio-section">
+
+        <div class="container">
+
+            <p class="section-number">02 / JOURNEY</p>
+
+            <h2 class="section-title">
+                Mi <span>camino</span>
+            </h2>
+
+            <div class="journey-grid">
+
+                <article class="journey-card">
+                    <span>01</span>
+                    <h3>Aprender</h3>
+                    <p>
+                        Construir fundamentos sólidos y mantener una mentalidad
+                        de aprendizaje continuo.
+                    </p>
+                </article>
+
+                <article class="journey-card">
+                    <span>02</span>
+                    <h3>Crear</h3>
+                    <p>
+                        Convertir conocimientos e ideas en proyectos y
+                        soluciones funcionales.
+                    </p>
+                </article>
+
+                <article class="journey-card">
+                    <span>03</span>
+                    <h3>Crecer</h3>
+                    <p>
+                        Seguir evolucionando profesionalmente y asumir nuevos retos.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--STACK-->
+
+    <section id="stack" class="portfolio-section">
+
+        <div class="container">
+
+            <p class="section-number">03 / STACK</p>
+
+            <h2 class="section-title">
+                Mi <span>stack</span>
+            </h2>
+
+            <div class="stack-container">
+
+                <div class="stack-item">Java</div>
+                <div class="stack-item">Spring Boot</div>
+                <div class="stack-item">JavaScript</div>
+                <div class="stack-item">HTML</div>
+                <div class="stack-item">CSS</div>
+                <div class="stack-item">MySQL</div>
+                <div class="stack-item">Git</div>
+                <div class="stack-item">GitHub</div>
+                <div class="stack-item">Bootstrap</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--PROJECTS-->
+
+    <section id="projects" class="portfolio-section">
+
+        <div class="container">
+
+            <p class="section-number">04 / PROJECTS</p>
+
+            <h2 class="section-title">
+                Mis <span>proyectos</span>
+            </h2>
+
+            <div class="projects-placeholder">
+
+                <p>
+                    Próximamente encontrarás aquí mis proyectos,
+                    experiencias y soluciones desarrolladas.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--CONTACT-->
+
+    <section id="contact" class="portfolio-section contact-section">
+
+        <div class="container">
+
+            <p class="section-number">05 / CONTACT</p>
+
+            <h2 class="section-title">
+                Construyamos algo <span>juntos</span>
+            </h2>
+
+            <p>
+                ¿Tienes una idea, proyecto u oportunidad?
+                Me encantará conocerla.
+            </p>
+
+            <a href="mailto:sara.gcardonat@gmail.com" class="hero-button">
+                CONTACTARME
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!--FOOTER-->
+
+    <footer>
+
+        <p>
+            © 2026 Gabriela Cardona · Full Stack Developer
+        </p>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
