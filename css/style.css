@@ -156,17 +156,11 @@ body {
 
 .tech-tag {
     position: absolute;
-
     padding: 8px 14px;
-
     border: 1px solid rgba(255, 255, 255, 0.2);
-
     background-color: rgba(25, 18, 45, 0.9);
-
     border-radius: 20px;
-
     font-size: 0.8rem;
-
     box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
 }
 
@@ -174,16 +168,39 @@ body {
     top: 5%;
     left: 0;
 }
-
-.tag-spring {
+.tag-git {
+    right: 10;
+    top: -10%;
+}
+.tag-bootstrap {
     right: 0;
     top: 35%;
 }
-
 .tag-js {
     bottom: 5%;
     left: 5%;
 }
+.tag-html {
+    top: 85%;
+    right: 0;
+}
+.tag-gitHub {
+    right: 10;
+    top: 100%;
+}
+.tag-gitHub {
+    right: 10;
+    top: 100%;
+}
+.tag-sql {
+    right: 0;
+    bottom: 100%;
+}
+.tag-css {
+    left: 0;
+}
+
+
 
 
 /*SECTIONS*/
