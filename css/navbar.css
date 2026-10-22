@@ -1,0 +1,46 @@
+/* Barra de navegación */
+.site-navbar {
+  background: rgba(15, 11, 26, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.navbar-brand {
+  color: var(--color-text);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: var(--color-text);
+}
+
+.navbar-brand span {
+  color: var(--color-lavender);
+}
+
+.site-navbar .nav-link {
+  margin-left: 15px;
+  color: var(--color-text);
+  font-size: 0.8rem;
+  transition: color var(--transition);
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link:focus,
+.site-navbar .nav-link.active {
+  color: var(--color-pink);
+}
+
+.navbar-toggler {
+  border-color: rgba(192, 132, 252, 0.5);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.25);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}

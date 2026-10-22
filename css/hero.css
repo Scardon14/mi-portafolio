@@ -1,0 +1,134 @@
+/* Presentación principal */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 110px 8% 60px;
+}
+
+.hero-content {
+  width: 55%;
+}
+
+.hero-greeting {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.hero h1 {
+  margin: 0 0 15px;
+  background: var(--gradient-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  overflow-wrap: anywhere;
+}
+
+.hero h2 {
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.hero-description {
+  max-width: 650px;
+  margin-bottom: 30px;
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 14px 24px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--gradient-primary);
+  color: var(--color-text);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.hero-button:hover,
+.hero-button:focus-visible {
+  color: var(--color-text);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+}
+
+.hero-button span {
+  margin-left: 10px;
+}
+
+.hero-image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.hero-image-container img {
+  display: block;
+  width: 380px;
+  max-width: 100%;
+  border: 1px solid rgba(192, 132, 252, 0.2);
+  border-radius: 30px;
+  box-shadow: var(--shadow-glow);
+  object-fit: cover;
+}
+
+.tech-tag {
+  position: absolute;
+  z-index: 1;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  background: rgba(25, 18, 45, 0.94);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.tag-java {
+  top: 5%;
+  left: -5%;
+}
+
+.tag-git {
+  top: -5%;
+  right: 10%;
+}
+
+.tag-bootstrap {
+  top: 35%;
+  right: -12%;
+}
+
+.tag-js {
+  bottom: 5%;
+  left: 0;
+}
+
+.tag-github {
+  right: 0;
+  bottom: -5%;
+}
+
+.tag-html {
+  top: 80%;
+  right: -5%;
+}
+
+.tag-sql {
+  top: -7%;
+  left: 25%;
+}
+
+.tag-css {
+  bottom: 30%;
+  left: -12%;
+}
