@@ -18,3 +18,9 @@
 .spine { width: 52px; height: var(--h); padding: 12px 0; border: 0; border-radius: 6px 6px 0 0; background: var(--book-color); color: #fff; font: 700 0.85rem "Syne", sans-serif; writing-mode: vertical-rl; transition: transform 0.35s, filter 0.35s; filter: brightness(0.75); } /* Lomo de libro */
 .spine:hover, .spine.is-active { transform: translateY(-16px); filter: brightness(1.05); } /* Se levanta el libro activo */
 @media (max-width: 767.98px) { .library-stage { grid-template-columns: 1fr 1fr; } .book { grid-column: 1 / -1; grid-row: 1; padding: 28px 24px 28px 30px; } .library-progress { margin: 18px 0 0; } .arrow:first-child { justify-self: end; } .arrow:last-child { justify-self: start; grid-column: 2; grid-row: 2; } .arrow:first-child { grid-column: 1; grid-row: 2; } } /* Móvil: flechas debajo */
+.book { display: grid; grid-template-columns: 1.15fr 1fr; gap: 32px; align-items: start; } /* Texto a la izquierda y captura a la derecha */
+.book .feat { margin: 0 0 6px; padding-left: 18px; color: var(--color-muted-dark); } /* Características */
+.book .meta { margin: 8px 0 0; font-size: 0.9rem; color: var(--color-muted-dark); } /* Equipo, aporte y reto */
+.book .links { display: flex; flex-wrap: wrap; gap: 8px 24px; } /* Enlaces de demo y código */
+.shot img { width: 100%; border: 1px solid var(--color-border); border-radius: 12px; background: var(--color-surface); } /* Captura del proyecto */
+@media (max-width: 991.98px) { .book { grid-template-columns: 1fr; } } /* Una columna en pantallas medianas */

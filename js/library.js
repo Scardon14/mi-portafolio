@@ -23,7 +23,8 @@ export function initLibrary(root) {
     const p = projects[index]; // Proyecto actual
     const l = lang(); // Idioma actual
     book.style.setProperty("--book-color", p.color); // Color del libro
-    book.innerHTML = `<small>${labels.volume[l].toUpperCase()} ${index + 1}/${projects.length} · ${p.type[l]}</small><h3>${p.title}</h3><p>${p.desc[l]}</p><ul class="tags">${p.tags.map((t) => `<li>${t}</li>`).join("")}</ul><a href="${p.url}" target="_blank" rel="noopener noreferrer">${labels.view[l]}</a>`; // Contenido
+    const shot = `https://s.wordpress.com/mshots/v1/${encodeURIComponent(p.demo)}?w=700&h=440`; // Captura automática de la demo
+    book.innerHTML = `<div><small>${labels.volume[l].toUpperCase()} ${index + 1}/${projects.length} · ${p.type[l]} · ${labels[p.kind][l]}</small><h3>${p.title}</h3><p>${p.desc[l]}</p><ul class="feat">${p.features[l].map((f) => `<li>${f}</li>`).join("")}</ul>${p.team ? `<p class="meta">${labels.with[l]}: ${p.team.join(", ")}</p>` : ""}${p.role ? `<p class="meta">${labels.role[l]}: ${p.role[l]}</p>` : ""}${p.challenge ? `<p class="meta">${labels.challenge[l]}: ${p.challenge[l]}</p>` : ""}<ul class="tags">${p.tags.map((t) => `<li>${t}</li>`).join("")}</ul><div class="links"><a href="${p.demo}" target="_blank" rel="noopener noreferrer">${labels.demo[l]}</a><a href="${p.repo}" target="_blank" rel="noopener noreferrer">${labels.code[l]}</a></div></div><a class="shot" href="${p.demo}" target="_blank" rel="noopener noreferrer" tabindex="-1"><img src="${shot}" alt="Captura de ${p.title}" loading="lazy" onerror="this.parentNode.remove()"></a>`; // Contenido completo del libro
     book.style.animation = "none"; // Quita la animación para reiniciarla
     void book.offsetWidth; // Fuerza un reflow
     book.style.animation = ""; // Reactiva la animación de página

@@ -23,3 +23,18 @@
 .tl p, .tl ul { margin: 0; color: var(--color-muted-dark); line-height: 1.6; } /* Descripción */
 .tl ul { padding-left: 18px; } /* Viñetas del cargo */
 @media (max-width: 991.98px) { .path-grid { grid-template-columns: 1fr; gap: 20px; } .nav-tools { margin: 10px 0 0; } } /* Ajustes móviles */
+.social { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 22px; } /* Enlaces de contacto y redes */
+.social a, .stats-note a { color: var(--color-lavender); font-weight: 700; text-decoration: none; border-bottom: 1px solid var(--color-border); } /* Enlace discreto */
+.social a:hover, .stats-note a:hover { color: var(--color-accent); border-color: var(--color-accent); } /* Resalta al pasar */
+.skills-row { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 24px; } /* Habilidades e idiomas */
+.skills-row h3 { margin-bottom: 14px; font-size: 1.2rem; color: var(--color-lavender); } /* Título de bloque */
+.chips { display: flex; flex-wrap: wrap; gap: 10px; } /* Fila de pastillas */
+.blog { display: grid; gap: 12px; } /* Lista del blog */
+.post { border: 1px solid var(--color-border); border-radius: 14px; background: var(--color-surface); backdrop-filter: blur(10px); } /* Entrada desplegable */
+.post summary { display: grid; gap: 4px; padding: 18px 22px; cursor: pointer; list-style: none; } /* Resumen clicable */
+.post summary::-webkit-details-marker { display: none; } /* Oculta el triángulo en Safari */
+.post-date { color: var(--color-star); font-size: 0.8rem; font-weight: 700; } /* Fecha y etiqueta */
+.post summary strong { font: 700 1.15rem "Syne", sans-serif; } /* Título de la entrada */
+.post p { margin: 0; padding: 0 22px 20px; max-width: 70ch; color: var(--color-muted); line-height: 1.7; } /* Texto de la entrada */
+.post[open] { border-color: var(--color-accent); } /* Resalta la entrada abierta */
+@media (max-width: 767.98px) { .skills-row { grid-template-columns: 1fr; gap: 24px; } } /* Móvil */
