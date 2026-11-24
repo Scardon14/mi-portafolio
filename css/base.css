@@ -1,0 +1,8 @@
+/* Estilos globales, tipografía y comportamiento de desplazamiento */
+* { box-sizing: border-box; }                                  /* Padding y borde incluidos en el tamaño */
+html { scroll-behavior: smooth; scroll-padding-top: 85px; }    /* Desplazamiento suave bajo la barra fija */
+html.is-loading { overflow: hidden; }                          /* Bloquea el scroll mientras carga */
+body { margin: 0; overflow-x: hidden; background: var(--color-bg); color: var(--color-text); font-family: "Manrope", Arial, sans-serif; } /* Cuerpo */
+h1, h2, h3, .navbar-brand { font-family: "Syne", "Manrope", sans-serif; letter-spacing: -0.02em; } /* Títulos con personalidad */
+a { color: inherit; }                                          /* Enlaces heredan color */
+.section-anchor { scroll-margin-top: 80px; }                   /* Margen al saltar a una sección */

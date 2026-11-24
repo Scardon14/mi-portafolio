@@ -1,0 +1,20 @@
+/* Biblioteca de proyectos: libro abierto + estante de lomos */
+.library-stage { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; } /* Flecha, libro, flecha */
+.arrow { width: 46px; height: 46px; border: 1px solid var(--color-border); border-radius: 50%; background: var(--color-surface); color: var(--color-text); font-size: 1.3rem; transition: border-color var(--transition), color var(--transition); } /* Flechas */
+.arrow:hover { border-color: var(--color-accent); color: var(--color-accent); } /* Resalta al pasar */
+.book { position: relative; min-height: 300px; padding: 36px 40px 36px 48px; border: 1px solid var(--color-border); border-left: 16px solid var(--book-color); border-radius: 6px 20px 20px 6px; background: var(--color-surface); backdrop-filter: blur(10px); box-shadow: 8px 0 0 -3px var(--color-border), 15px 0 0 -6px var(--color-border); animation: page 0.6s ease; } /* Libro con páginas apiladas */
+@keyframes page { from { opacity: 0; transform: translateX(24px) rotateY(-8deg); } } /* Pasa de página */
+.book small { color: var(--book-color); font-weight: 700; letter-spacing: 0.08em; } /* Tomo y tipo */
+.book h3 { margin: 10px 0 14px; font-size: clamp(1.8rem, 4vw, 2.8rem); } /* Título grande */
+.book p { max-width: 52ch; color: var(--color-muted); line-height: 1.7; } /* Descripción */
+.book .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 24px; padding: 0; list-style: none; } /* Etiquetas */
+.book .tags li { padding: 4px 12px; border-bottom: 2px solid var(--book-color); color: var(--color-muted-dark); font-size: 0.8rem; } /* Etiqueta subrayada */
+.book a { font-weight: 700; color: var(--color-text); text-decoration: none; border-bottom: 2px solid var(--book-color); } /* Enlace */
+.library-progress { height: 3px; margin: 22px 62px 0; background: var(--color-border); } /* Barra del autoavance */
+.library-progress i { display: block; height: 100%; width: 0; background: var(--color-accent); animation: fill var(--delay, 6s) linear forwards; } /* Relleno */
+.library.is-paused .library-progress i { animation-play-state: paused; } /* Pausa al interactuar */
+@keyframes fill { to { width: 100%; } } /* Llena la barra */
+.shelf { display: flex; align-items: flex-end; justify-content: center; gap: 6px; height: 170px; margin-top: 20px; border-bottom: 10px solid var(--shelf); } /* Repisa */
+.spine { width: 52px; height: var(--h); padding: 12px 0; border: 0; border-radius: 6px 6px 0 0; background: var(--book-color); color: #fff; font: 700 0.85rem "Syne", sans-serif; writing-mode: vertical-rl; transition: transform 0.35s, filter 0.35s; filter: brightness(0.75); } /* Lomo de libro */
+.spine:hover, .spine.is-active { transform: translateY(-16px); filter: brightness(1.05); } /* Se levanta el libro activo */
+@media (max-width: 767.98px) { .library-stage { grid-template-columns: 1fr 1fr; } .book { grid-column: 1 / -1; grid-row: 1; padding: 28px 24px 28px 30px; } .library-progress { margin: 18px 0 0; } .arrow:first-child { justify-self: end; } .arrow:last-child { justify-self: start; grid-column: 2; grid-row: 2; } .arrow:first-child { grid-column: 1; grid-row: 2; } } /* Móvil: flechas debajo */

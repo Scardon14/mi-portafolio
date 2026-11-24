@@ -1,0 +1,21 @@
+/* Paletas oscura (galaxia) y clara (amanecer); se cambian con data-theme */
+:root, [data-theme="dark"] {
+  --color-bg: #04050D; --color-surface: rgba(10, 12, 34, 0.62); --color-surface-solid: rgba(8, 10, 30, 0.88); /* Fondo y superficies */
+  --color-text: #F4F1FF; --color-muted: #C9CCE6; --color-muted-dark: #AEB3D6; /* Textos */
+  --color-purple: #7C5CFF; --color-lavender: #A9B8FF; --color-accent: #3EE6C3; --color-star: #FFB86B; /* Acentos */
+  --color-border: rgba(169, 184, 255, 0.16); --color-nav: rgba(4, 5, 13, 0.65); --loader-bg: radial-gradient(circle at 50% 40%, #151A45, #04050D 70%); /* Bordes, barra y carga */
+  --nebula-1: rgba(124, 92, 255, 0.30); --nebula-2: rgba(62, 230, 195, 0.14); --nebula-3: rgba(255, 184, 107, 0.09); /* Nebulosas */
+  --shadow-glow: 0 0 60px rgba(124, 92, 255, 0.35); --shelf: #2A2350; /* Resplandor y repisa */
+}
+[data-theme="light"] {
+  --color-bg: #F6F4FF; --color-surface: rgba(255, 255, 255, 0.72); --color-surface-solid: rgba(255, 255, 255, 0.92);
+  --color-text: #14122B; --color-muted: #3F3D63; --color-muted-dark: #55537A;
+  --color-purple: #5B3FE0; --color-lavender: #4A5BC8; --color-accent: #0B8F78; --color-star: #D9780F;
+  --color-border: rgba(60, 50, 140, 0.18); --color-nav: rgba(246, 244, 255, 0.78); --loader-bg: radial-gradient(circle at 50% 40%, #FFFFFF, #E9E4FF 75%);
+  --nebula-1: rgba(124, 92, 255, 0.18); --nebula-2: rgba(62, 230, 195, 0.16); --nebula-3: rgba(255, 184, 107, 0.18);
+  --shadow-glow: 0 10px 50px rgba(91, 63, 224, 0.25); --shelf: #C9C0F2;
+}
+:root {
+  --gradient-primary: linear-gradient(90deg, var(--color-purple), var(--color-accent)); /* Degradado principal */
+  --radius-card: 20px; --transition: 0.3s ease; /* Radio y transición estándar */
+}

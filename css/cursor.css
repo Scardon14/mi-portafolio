@@ -1,0 +1,11 @@
+/* Cursor personalizado: estrella + anillo, y chispas al hacer clic */
+.has-cursor, .has-cursor * { cursor: none !important; }                                   /* Oculta la flecha del sistema */
+.cursor-dot, .cursor-ring, .cursor-spark { position: fixed; top: 0; left: 0; z-index: 10000; pointer-events: none; } /* Capas flotantes */
+.cursor-dot { width: 20px; height: 20px; margin: -10px 0 0 -10px; background: var(--color-star); opacity: 0;
+  clip-path: polygon(50% 0, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0 50%, 40% 40%); transition: scale 0.2s; } /* Estrella de 4 puntas */
+.cursor-ring { width: 40px; height: 40px; margin: -20px 0 0 -20px; border: 1px solid var(--color-lavender); border-radius: 50%; opacity: 0;
+  transition: width 0.25s, height 0.25s, margin 0.25s, background 0.25s, border-color 0.25s; } /* Anillo que sigue con retraso */
+.cursor-dot.is-visible, .cursor-ring.is-visible { opacity: 1; }                           /* Se muestran tras el primer movimiento */
+.cursor-ring.is-hover { width: 68px; height: 68px; margin: -34px 0 0 -34px; border-color: var(--color-accent); background: rgba(62, 230, 195, 0.12); } /* Crece sobre enlaces */
+.cursor-ring.is-down { width: 24px; height: 24px; margin: -12px 0 0 -12px; }              /* Se contrae al presionar */
+.cursor-spark { width: 6px; height: 6px; margin: -3px 0 0 -3px; border-radius: 50%; }     /* Chispa de la explosión */

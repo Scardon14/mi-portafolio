@@ -1,0 +1,25 @@
+/* Herramientas de la barra, botones, estadísticas y trayectoria */
+[data-theme="light"] .navbar-toggler-icon { filter: none; } /* Icono del menú legible en claro */
+.hero-button, .hero-button:hover { color: #fff; } /* Texto blanco sobre el degradado */
+.nav-tools { display: flex; gap: 8px; margin-left: 18px; } /* Contenedor de botones de tema e idioma */
+.tool-btn { min-width: 40px; height: 36px; border: 1px solid var(--color-border); border-radius: 999px; background: transparent; color: var(--color-text); font: 700 0.75rem "Manrope", sans-serif; transition: border-color var(--transition), color var(--transition); } /* Botón redondo */
+.tool-btn:hover { border-color: var(--color-accent); color: var(--color-accent); } /* Resalta al pasar */
+.tool-btn:focus-visible, .spine:focus-visible, .arrow:focus-visible, .hero-button:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; } /* Foco visible por teclado */
+.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; } /* Botones del hero */
+.hero-button.ghost { background: transparent; border: 1px solid var(--color-purple); } /* Botón secundario (CV) */
+.status { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px; padding: 6px 14px; border: 1px solid var(--color-border); border-radius: 999px; font-size: 0.8rem; color: var(--color-muted); } /* Insignia de disponibilidad */
+.status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--color-accent); box-shadow: 0 0 10px var(--color-accent); } /* Punto verde */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 28px; margin-top: 44px; } /* Cifras de impacto */
+.stats div { padding-left: 18px; border-left: 2px solid var(--color-purple); } /* Línea lateral en vez de tarjeta */
+.stats strong { display: block; font: 800 2.6rem "Syne", sans-serif; background: var(--gradient-primary); -webkit-background-clip: text; background-clip: text; color: transparent; } /* Número grande */
+.stats span, .stats-note { color: var(--color-muted-dark); font-size: 0.9rem; } /* Texto de cada cifra */
+.path-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; } /* Experiencia y educación */
+.path-grid h3 { margin-bottom: 24px; font-size: 1.2rem; color: var(--color-lavender); } /* Título de columna */
+.tl { position: relative; margin: 0 0 32px; padding: 0 0 0 26px; list-style: none; border-left: 1px solid var(--color-border); } /* Línea de tiempo */
+.tl li { position: relative; margin-bottom: 26px; } /* Cada hito */
+.tl li::before { content: ""; position: absolute; left: -32px; top: 6px; width: 11px; height: 11px; border-radius: 50%; background: var(--color-accent); box-shadow: 0 0 0 4px var(--color-bg); } /* Punto del hito */
+.tl h4 { margin: 0 0 4px; font: 700 1.1rem "Syne", sans-serif; } /* Cargo o título */
+.tl small { display: block; margin-bottom: 8px; color: var(--color-star); } /* Fecha */
+.tl p, .tl ul { margin: 0; color: var(--color-muted-dark); line-height: 1.6; } /* Descripción */
+.tl ul { padding-left: 18px; } /* Viñetas del cargo */
+@media (max-width: 991.98px) { .path-grid { grid-template-columns: 1fr; gap: 20px; } .nav-tools { margin: 10px 0 0; } } /* Ajustes móviles */
