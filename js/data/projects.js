@@ -14,7 +14,7 @@ export const projects = [ // Lista de proyectos con textos en español e inglés
     features: { es: ["Gestión de tareas y proyectos", "Diseño moderno e intuitivo"], en: ["Task and project management", "Modern, intuitive design"] },
     challenge: { es: "Mantener el código ordenado a medida que crecían las funciones; lo resolví separando la lógica en JavaScript de la presentación en HTML y CSS.", en: "Keeping the code organized as features grew; I solved it by separating the JavaScript logic from the HTML and CSS presentation." } },
   { title: "Trendy Shop", color: "#FFB86B", kind: "team", tags: ["HTML", "CSS", "JavaScript", "Bootstrap"], // Tercer proyecto
-    demo: "https://argie-fullstack-java-generation-ch14.github.io/trendy-shop/", repo: "https://github.com/argie-fullstack-java-generation-ch14/trendy-shop",
+    demo: "https://scardon14.github.io/trendy-shop/", repo: "https://github.com/Scardon14/trendy-shop",
     type: { es: "Tienda en línea", en: "Online store" },
     desc: { es: "Participé en un proyecto colaborativo del bootcamp de Generation: una tienda en línea de ropa.", en: "I took part in a collaborative project at the Generation bootcamp: an online clothing store." },
     features: { es: ["Tienda de ropa en línea"], en: ["Online clothing store"] },
