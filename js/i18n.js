@@ -14,8 +14,8 @@ const en = { // Clave data-i18n -> texto en inglés
   job: "Intern", jobDate: "Jan 2025 – Nov 2025",
   j1: "Internal Power Apps tools to report phishing and data-leak alerts.", j2: "Incident ticketing app for the cybersecurity SOC and an initiative tracker for Digital Cyberdefense and Anti-fraud.", j3: "Power Automate automations, testing, technical documentation and quality control.",
   e1: "Software Engineering", e1d: "Nov 2026 – present · Semester I", e2: "Java Full Stack Bootcamp", e2d: "Sep 2026 – present", e3: "Software Programming Technician", e3d: "Feb 2026",
-  techTitle: "Technologies I use", techNote: "Ordered in layers, from language to automation.",
-  projTitle: "My project library", projNote: "Each volume is a project: pick one or let them turn by themselves.",
+  techTitle: "Technologies I use", techNote: "Ordered in layers, from languages to methodologies.",
+  projTitle: "My project library", projNote: "Pick a project from the shelf or let them turn by themselves.",
   contactTitle: "Let's build something together", contactP: "Have an opening, an idea or a project? I'd love to hear about it.", write: "Message me on WhatsApp", email: "Email",
   footer: "Java Full Stack Developer",
 };

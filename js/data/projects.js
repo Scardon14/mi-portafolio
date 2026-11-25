@@ -14,7 +14,7 @@ export const projects = [ // Lista de proyectos con textos en español e inglés
     features: { es: ["Gestión de tareas y proyectos", "Diseño moderno e intuitivo"], en: ["Task and project management", "Modern, intuitive design"] },
     challenge: { es: "Mantener el código ordenado a medida que crecían las funciones; lo resolví separando la lógica en JavaScript de la presentación en HTML y CSS.", en: "Keeping the code organized as features grew; I solved it by separating the JavaScript logic from the HTML and CSS presentation." } },
   { title: "Trendy Shop", color: "#FFB86B", kind: "team", tags: ["HTML", "CSS", "JavaScript", "Bootstrap"], // Tercer proyecto
-    demo: "https://scardon14.github.io/trendy-shop/", repo: "https://github.com/Scardon14/trendy-shop",
+    demo: "https://argie-fullstack-java-generation-ch14.github.io/trendy-shop/", repo: "https://github.com/argie-fullstack-java-generation-ch14/trendy-shop",
     type: { es: "Tienda en línea", en: "Online store" },
     desc: { es: "Participé en un proyecto colaborativo del bootcamp de Generation: una tienda en línea de ropa.", en: "I took part in a collaborative project at the Generation bootcamp: an online clothing store." },
     features: { es: ["Tienda de ropa en línea"], en: ["Online clothing store"] },
@@ -27,7 +27,7 @@ export const projects = [ // Lista de proyectos con textos en español e inglés
     challenge: { es: "Evitar errores si la persona ingresa un dato no válido; lo resolví validando la entrada en JavaScript y mostrando mensajes claros.", en: "Avoiding errors when a user enters invalid data; I solved it by validating input in JavaScript and showing clear messages." } },
 ];
 export const labels = { // Textos de la interfaz de la biblioteca
-  demo: { es: "Ver demo ↗", en: "Live demo ↗" }, code: { es: "Código fuente ↗", en: "Source code ↗" }, volume: { es: "Tomo", en: "Volume" },
+  demo: { es: "Ver demo ↗", en: "Live demo ↗" }, code: { es: "Código fuente ↗", en: "Source code ↗" }, volume: { es: "Proyecto", en: "Project" },
   personal: { es: "Proyecto personal", en: "Personal project" }, team: { es: "Proyecto colaborativo", en: "Collaborative project" },
   with: { es: "Colaboradores", en: "Collaborators" }, role: { es: "Mi aporte", en: "My contribution" }, challenge: { es: "Reto", en: "Challenge" },
   prev: { es: "Proyecto anterior", en: "Previous project" }, next: { es: "Proyecto siguiente", en: "Next project" },
